@@ -2,5 +2,6 @@ using MyExample
 using Test
 
 @testset "MyExample.jl" begin
-    # Write your tests here.
+    @test MyExample.greet_your_package_name() == "Hello MyExample.jl!"
+    @test MyExample.greet_your_package_name() != "Hello world!"
 end
